@@ -1,195 +1,133 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aprendendo com Jesus</title>
+  <title>Material Infantil com Jesus</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Arial Rounded MT Bold', sans-serif;
-      background: #e9f6ff;
-      color: #004466;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
-
-    header {
-      background: #d8f0ff;
+    body {
+      background: linear-gradient(to bottom, #e0f7ff, #cceeff);
+      color: #003366;
       text-align: center;
-      padding: 3rem 1rem;
     }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #006699;
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-
-    header p {
-      font-size: 1.2rem;
-      margin: 1rem auto;
-      max-width: 600px;
+    .hero img {
+      max-width: 300px;
     }
-
-    .cta-button {
-      background: #4da6ff;
+    .title {
+      font-size: 28px;
+      margin: 20px 0;
+    }
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .cta-buttons button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #66ccff;
       color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 30px;
-      font-size: 1rem;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-
-    section {
-      padding: 3rem 1rem;
-      text-align: center;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
     }
-
-    .section-light {
-      background: #f0fbff;
+    .grid img {
+      width: 100%;
+      border-radius: 8px;
     }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
+    .section {
+      padding: 40px 0;
     }
-
-    .gallery img {
-      width: 130px;
+    .form-section {
+      background-color: #b3e5fc;
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
-    .benefits {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      margin-top: 2rem;
+    .form-section input {
+      padding: 10px;
+      margin: 10px;
+      width: 80%;
+      border: 1px solid #3399cc;
+      border-radius: 5px;
     }
-
-    .benefit {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 15px;
-      width: 220px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    .testimonial {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      width: 220px;
-      margin: 0.5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-
-    .price-section {
-      background: linear-gradient(135deg, #cceeff, #99ddff);
-      padding: 3rem 1rem;
-      text-align: center;
-      color: #003344;
-    }
-
-    .price-box {
-      background: white;
-      padding: 2rem;
-      border-radius: 20px;
-      display: inline-block;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background: #d8f0ff;
-      padding: 2rem 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #004466;
-    }
-
-    input, textarea {
-      padding: 0.5rem;
-      width: 90%;
-      max-width: 400px;
-      margin: 0.5rem 0;
-      border-radius: 10px;
-      border: 1px solid #aacce0;
+    .footer {
+      padding: 20px;
+      font-size: 14px;
+      background-color: #99d6ff;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Jesus e as Crianças</h1>
-    <p>Ajude seu filho a crescer nos caminhos de Deus com histórias da Bíblia e atividades cristãs ilustradas!</p>
-    <a href="#oferta" class="cta-button">Quero Ajudar Meu Filho</a>
-  </header>
-
-  <section class="section-light">
-    <h2>Seu filho vai aprender com:</h2>
-    <div class="gallery">
-      <img src="https://cdn-icons-png.flaticon.com/512/2364/2364332.png" alt="Livro 1">
-      <img src="https://cdn-icons-png.flaticon.com/512/3038/3038994.png" alt="Livro 2">
-      <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" alt="Livro 3">
-      <img src="https://cdn-icons-png.flaticon.com/512/2620/2620991.png" alt="Livro 4">
-    </div>
-  </section>
-
-  <section>
-    <h2>Por que ensinar Jesus às crianças?</h2>
-    <div class="benefits">
-      <div class="benefit">
-        <h3>💖 Amor</h3>
-        <p>Jesus ensina as crianças a amarem a Deus e ao próximo.</p>
-      </div>
-      <div class="benefit">
-        <h3>🌟 Valores</h3>
-        <p>Aprendem bondade, respeito, fé e gratidão.</p>
-      </div>
-      <div class="benefit">
-        <h3>🎨 Atividades Bíblicas</h3>
-        <p>Colorir e interagir com histórias como Arca de Noé, Davi e Golias, etc.</p>
+  <div class="container">
+    <div class="hero">
+      <h1 class="title">Transforme Seu Filho em um Pequeno Cristão com nosso Livro!</h1>
+      <img src="livro-exemplo.png" alt="Livro cristão infantil">
+      <div class="cta-buttons">
+        <button>Baixar Agora</button>
+        <button>Ver Mais Exemplos</button>
       </div>
     </div>
-  </section>
 
-  <section class="section-light">
-    <h2>Depoimentos de Pais</h2>
-    <div class="benefits">
-      <div class="testimonial">
-        “A Isabela agora sempre ora antes de dormir e adora os livrinhos de Jesus!”
-        <br><small>— Camila, mãe</small>
-      </div>
-      <div class="testimonial">
-        “Meu filho aprendeu sobre perdão com a história de José.”
-        <br><small>— Marcos, pai</small>
+    <div class="section">
+      <h2 class="subtitle">Tudo o que seu filho vai receber:</h2>
+      <div class="grid">
+        <img src="material1.png" alt="Material 1">
+        <img src="material2.png" alt="Material 2">
+        <img src="material3.png" alt="Material 3">
+        <img src="material4.png" alt="Material 4">
+        <img src="material5.png" alt="Material 5">
+        <img src="material6.png" alt="Material 6">
       </div>
     </div>
-  </section>
 
-  <section id="oferta" class="price-section">
-    <h2>Comece Hoje com Apenas R$ 19,90</h2>
-    <div class="price-box">
-      <p>Você recebe acesso ao PDF com 10 histórias bíblicas ilustradas + atividades para colorir.</p>
-      <h3 style="margin: 1rem 0; font-size: 2rem;">R$ 19,90</h3>
-      <a href="#" class="cta-button">Quero Ajudar Meu Filho Agora</a>
+    <div class="section">
+      <h2 class="subtitle">Veja alguns exemplos do que seu filho vai aprender:</h2>
+      <img src="desenho-biblico.png" alt="Desenho bíblico colorir" style="max-width: 400px; width: 100%;">
     </div>
-  </section>
 
-  <footer>
-    <h3>Perguntas Frequentes</h3>
-    <form>
-      <input type="text" placeholder="Seu nome"><br>
-      <input type="email" placeholder="Seu e-mail"><br>
-      <textarea placeholder="Sua pergunta..."></textarea><br>
-      <button class="cta-button">Enviar</button>
-    </form>
-    <p>Material 100% digital | Garantia de 7 dias | Suporte por WhatsApp</p>
-    <p>© 2025 Jesus e as Crianças. Todos os direitos reservados.</p>
-  </footer>
+    <div class="section">
+      <h2 class="subtitle">Por que escolher nosso material?</h2>
+      <p>✔️ Ensina valores cristãos<br>✔️ Desenvolve o amor por Jesus<br>✔️ Estimula a criatividade com atividades divertidas</p>
+    </div>
 
+    <div class="section">
+      <h2 class="subtitle">Você recebe também, sem pagar nada a mais:</h2>
+      <p>✔️ Versão mobile do material<br>✔️ Certificado de participação<br>✔️ Acesso a comunidade exclusiva</p>
+    </div>
+
+    <div class="section">
+      <img src="mockup-app.png" alt="Aplicativo do curso" style="max-width: 300px;">
+    </div>
+
+    <div class="section form-section">
+      <h2 class="subtitle">Receba seu presente agora mesmo!</h2>
+      <input type="text" placeholder="Seu nome">
+      <input type="email" placeholder="Seu melhor e-mail">
+      <br>
+      <button>Quero Receber</button>
+    </div>
+
+    <div class="footer">
+      <p>Política de Privacidade | Termos de Uso | Reembolso</p>
+      <p>Não perca essa oportunidade! ✨</p>
+    </div>
+  </div>
 </body>
 </html>
