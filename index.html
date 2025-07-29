@@ -1,133 +1,147 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Material Infantil com Jesus</title>
+  <title>Pequenos com Propósito</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    body {
-      background: linear-gradient(to bottom, #e0f7ff, #cceeff);
-      color: #003366;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .hero img {
-      max-width: 300px;
-    }
-    .title {
-      font-size: 28px;
-      margin: 20px 0;
-    }
-    .subtitle {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    .cta-buttons button {
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #66ccff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 15px;
-      margin: 20px 0;
-    }
-    .grid img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .section {
-      padding: 40px 0;
-    }
-    .form-section {
-      background-color: #b3e5fc;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .form-section input {
-      padding: 10px;
-      margin: 10px;
-      width: 80%;
-      border: 1px solid #3399cc;
-      border-radius: 5px;
-    }
-    .footer {
-      padding: 20px;
-      font-size: 14px;
-      background-color: #99d6ff;
-      margin-top: 20px;
-    }
+    body { margin: 0; font-family: 'Roboto', sans-serif; }
+    header { background: #e30000; color: white; padding: 10px; text-align: center; font-weight: bold; font-size: 14px; }
+    .section { padding: 30px 20px; text-align: center; }
+    .banner { background: #fff; }
+    .banner h1 { color: #222; font-size: 22px; margin-bottom: 10px; }
+    .banner p { color: #333; font-size: 16px; }
+    .banner small { color: red; font-size: 14px; display: block; margin-top: 10px; }
+    .img-center { display: block; margin: 20px auto; max-width: 100%; }
+    .highlight { background: #8bc34a; padding: 10px; color: white; font-weight: bold; margin-top: 20px; }
+    .blue-section { background: #d7f4ff; }
+    .green-section { background: #8bc34a; color: white; }
+    .green-section h2 { margin-bottom: 10px; }
+    .btn { background: #00c300; color: white; padding: 12px 20px; display: inline-block; margin-top: 20px; font-weight: bold; text-decoration: none; border-radius: 4px; }
+    .two-columns { display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .two-columns img { width: 120px; height: auto; }
+    .faq { text-align: left; max-width: 600px; margin: auto; margin-top: 20px; }
+    .faq summary { font-weight: bold; margin: 10px 0; }
+    footer { background: #009688; color: white; text-align: center; padding: 15px; font-size: 14px; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="hero">
-      <h1 class="title">Transforme Seu Filho em um Pequeno Cristão com nosso Livro!</h1>
-      <img src="livro-exemplo.png" alt="Livro cristão infantil">
-      <div class="cta-buttons">
-        <button>Baixar Agora</button>
-        <button>Ver Mais Exemplos</button>
+  <header>
+    ATENÇÃO MÃE CRISTÃ: Oferta de lançamento termina em <strong>07:52:45</strong> (R$ 2,50 por dia)
+  </header>
+
+  <section class="section banner">
+    <img src="/assets/img/logo-placeholder.png" alt="Pequenos com Propósito" class="img-center" style="max-width: 180px;">
+    <h1>Você está deixando o celular educar o seu filho... e pode pagar caro por isso.</h1>
+    <p>Em tempos onde o YouTube ensina palavrões e o TikTok ensina valores contrários à Palavra de Deus, cada minuto na frente da tela pode ser uma semente plantada contra tudo o que você acredita.</p>
+    <small>⏰ Tempo da última chance: 14 minutos e 45 segundos. Caso não finalize poderá ser direcionado para uma nova página com valor reajustado.</small>
+    <img src="/assets/img/kids-jesus.png" alt="Jesus com crianças" class="img-center">
+    <div class="highlight">MAIS DE 20 LIVROS!</div>
+  </section>
+
+  <section class="section blue-section">
+    <div class="two-columns">
+      <div>
+        <h3>Antes</h3>
+        <p>Seu filho irritado, hiper estimulado e distante de Deus.</p>
+        <img src="/assets/img/antes.png" alt="Antes da transformação">
+      </div>
+      <div>
+        <h3>Depois</h3>
+        <p>Uma criança calma, criativa, aprendendo valores eternos com alegria e conexão familiar.</p>
+        <img src="/assets/img/depois.png" alt="Depois da transformação">
       </div>
     </div>
+    <a href="#" class="btn">QUERO APLICAR COM O MEU FILHO</a>
 
-    <div class="section">
-      <h2 class="subtitle">Tudo o que seu filho vai receber:</h2>
-      <div class="grid">
-        <img src="material1.png" alt="Material 1">
-        <img src="material2.png" alt="Material 2">
-        <img src="material3.png" alt="Material 3">
-        <img src="material4.png" alt="Material 4">
-        <img src="material5.png" alt="Material 5">
-        <img src="material6.png" alt="Material 6">
+    <h3>Veja o que você vai receber para educar o seu filho na fé:</h3>
+    <div class="two-columns">
+      <div>
+        <img src="/assets/img/caligrafia.png" alt="Atividades Bíblicas de Caligrafia">
+        <img src="/assets/img/colorir.png" alt="Desenhos Bíblicos para Colorir">
+        <img src="/assets/img/matematica.png" alt="Matemática Bíblica">
+      </div>
+      <div>
+        <img src="/assets/img/previews.png" alt="Pré-visualizações das atividades">
       </div>
     </div>
+    <p><strong>... e muito mais...</strong></p>
+  </section>
 
-    <div class="section">
-      <h2 class="subtitle">Veja alguns exemplos do que seu filho vai aprender:</h2>
-      <img src="desenho-biblico.png" alt="Desenho bíblico colorir" style="max-width: 400px; width: 100%;">
-    </div>
+  <section class="section green-section">
+    <h2>Confira o cronograma completo:</h2>
+    <ul style="text-align: left; max-width: 600px; margin: auto;">
+      <li>✅ Kit de +400 Atividades Bíblicas Criativas</li>
+      <li>✅ Livro "Colorindo com Propósito"</li>
+      <li>✅ Apostila "Aprendendo com Alegria"</li>
+      <li>✅ Acesso vitalício e imediato por e-mail</li>
+      <li>✅ Pode imprimir quantas vezes quiser</li>
+      <li>✅ Satisfação Garantida: Garantia incondicional de 7 dias</li>
+      <li>🎁 Bônus 1 – 10 livros de colorir com mais de 200 páginas</li>
+      <li>🎁 Bônus 2 – Histórias Bíblicas Ilustradas</li>
+      <li>🎁 Bônus 3 – Caderninho de Oração</li>
+      <li>🎁 Bônus 4 – Planner de Tarefas Diárias</li>
+      <li>🎁 Bônus 5 – Devocional de 30 Dias</li>
+      <li>🎁 Bônus 6 – Certificado Pequenos Propósito</li>
+    </ul>
+    <p><strong>Valor total: R$147</strong><br>Apenas hoje por: <strong style="font-size: 24px;">R$14,90</strong></p>
+    <a href="#" class="btn">SIM, EU QUERO O KIT COMPLETO COM DESCONTO</a>
+  </section>
 
-    <div class="section">
-      <h2 class="subtitle">Por que escolher nosso material?</h2>
-      <p>✔️ Ensina valores cristãos<br>✔️ Desenvolve o amor por Jesus<br>✔️ Estimula a criatividade com atividades divertidas</p>
-    </div>
+  <section class="section blue-section">
+    <p><strong>Já são mais de 38.000 famílias</strong> que trocaram o tempo de telas por momentos com Deus</p>
+    <p><em>Relato da Camila, mãe da Júlia (6 anos)</em></p>
+    <blockquote>"Minha filha não larga mais a Bíblia! Hoje ela sabe contar a história de cada personagem com emoção e até canta os versículos durante as brincadeiras!"</blockquote>
+    <a href="#" class="btn">QUERO FAZER COMO ELES</a>
 
-    <div class="section">
-      <h2 class="subtitle">Você recebe também, sem pagar nada a mais:</h2>
-      <p>✔️ Versão mobile do material<br>✔️ Certificado de participação<br>✔️ Acesso a comunidade exclusiva</p>
+    <h3>⚠️ Você tem 2 caminhos agora:</h3>
+    <div class="two-columns">
+      <div>
+        <img src="/assets/img/triste.png" alt="Triste">
+        <p>Continuar deixando a internet ocupar o lugar que era de Deus na infância do seu filho...</p>
+      </div>
+      <div>
+        <img src="/assets/img/oracao.png" alt="Oração">
+        <p>Ou agir agora, e por R$14,90 proteger sua família com uma ferramenta divertida, bíblica e transformadora.</p>
+      </div>
     </div>
+    <p>🔒 E se você não gostar? Tem 7 dias para testar com <strong>garantia total</strong>.</p>
+    <a href="#" class="btn">EU QUERO FAZER PARTE DESSA GERAÇÃO DE PAIS CONSCIENTES</a>
+  </section>
 
-    <div class="section">
-      <img src="mockup-app.png" alt="Aplicativo do curso" style="max-width: 300px;">
-    </div>
+  <section class="section">
+    <h2>FAQ - TIRANDO DÚVIDAS RÁPIDAS</h2>
+    <details class="faq">
+      <summary>O acesso é vitalício?</summary>
+      <p>Sim, o material é seu para sempre.</p>
+    </details>
+    <details class="faq">
+      <summary>Chega pelo correio?</summary>
+      <p>Não. Você receberá o acesso por e-mail e poderá imprimir.</p>
+    </details>
+    <details class="faq">
+      <summary>Posso imprimir quantas vezes quiser?</summary>
+      <p>Sim! Quantas vezes quiser.</p>
+    </details>
+    <details class="faq">
+      <summary>Serve para crianças de todas idades?</summary>
+      <p>Sim! Especialmente indicado para crianças de 3 a 11 anos.</p>
+    </details>
+    <details class="faq">
+      <summary>E se eu não gostar?</summary>
+      <p>Você tem 7 dias para pedir reembolso total.</p>
+    </details>
+  </section>
 
-    <div class="section form-section">
-      <h2 class="subtitle">Receba seu presente agora mesmo!</h2>
-      <input type="text" placeholder="Seu nome">
-      <input type="email" placeholder="Seu melhor e-mail">
-      <br>
-      <button>Quero Receber</button>
-    </div>
+  <section class="section blue-section">
+    <h3>📢 Últimos dias com esse valor promocional!</h3>
+    <p>Após isso, o valor volta para R$147,00.</p>
+    <a href="#" class="btn">SIM, QUERO PROTEGER MEU FILHO COM CONTEÚDO CRISTÃO COM A OFERTA DE 14,90</a>
+  </section>
 
-    <div class="footer">
-      <p>Política de Privacidade | Termos de Uso | Reembolso</p>
-      <p>Não perca essa oportunidade! ✨</p>
-    </div>
-  </div>
+  <footer>
+    &copy; Pequenos com Propósito — Todos os direitos reservados — 2025.
+  </footer>
 </body>
 </html>
