@@ -7,44 +7,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --cor1: #e0f7fa;
-      --cor2: #0077b6;
-      --cor3: #fcd34d;
-      --cor4: #ffffff;
+      --azul-claro: #e0f7fa;
+      --azul: #0077b6;
+      --amarelo: #fcd34d;
+      --branco: #ffffff;
+      --cinza: #f5f5f5;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * {margin: 0; padding: 0; box-sizing: border-box;}
 
     body {
       font-family: 'Nunito', sans-serif;
-      background: var(--cor1);
+      background: var(--cinza);
       color: #333;
     }
 
     header {
-      background: var(--cor2);
+      background: var(--azul);
       color: white;
+      padding: 70px 20px 50px;
       text-align: center;
-      padding: 60px 20px 40px;
     }
 
     header h1 {
-      font-size: 36px;
+      font-size: 40px;
       margin-bottom: 10px;
     }
 
     header p {
-      font-size: 18px;
+      font-size: 20px;
       max-width: 700px;
       margin: 0 auto;
     }
 
     .btn-comprar {
-      background: var(--cor3);
+      background: var(--amarelo);
       color: #111;
       padding: 15px 30px;
       font-weight: bold;
@@ -62,28 +59,29 @@
 
     section {
       padding: 60px 20px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      color: var(--azul);
+      margin-bottom: 40px;
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
-      margin-top: 40px;
     }
 
     .card {
-      background: var(--cor4);
+      background: white;
       padding: 25px;
       border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       text-align: center;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
     }
 
     .card img {
@@ -92,55 +90,105 @@
     }
 
     .card h3 {
+      color: var(--azul);
       font-size: 20px;
       margin-bottom: 10px;
-      color: var(--cor2);
     }
 
-    .faq {
-      background: #ffffff;
-      padding: 40px;
+    .card p {
+      font-size: 15px;
+    }
+
+    .imagem-banner {
+      width: 100%;
       border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-top: 20px;
+    }
+
+    .testemunhos {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .depoimento {
+      background: white;
+      border-left: 5px solid var(--azul);
+      padding: 20px;
+      border-radius: 10px;
+      font-style: italic;
+    }
+
+    .comparativo {
+      margin-top: 40px;
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .comparativo table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    .comparativo th, .comparativo td {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+
+    .comparativo th {
+      background: var(--azul-claro);
+      font-weight: bold;
+    }
+
+    .bonus {
+      background: var(--branco);
+      border-left: 5px solid var(--amarelo);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
     }
 
     .faq h3 {
+      color: var(--azul);
       margin-top: 20px;
-      color: var(--cor2);
     }
 
-    .valor {
-      background: #ffffff;
-      border-radius: 20px;
-      text-align: center;
-      padding: 40px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    .valor h2 {
-      font-size: 28px;
+    .faq p {
       margin-bottom: 15px;
-      color: var(--cor2);
     }
 
-    .valor p {
-      font-size: 18px;
+    .garantia {
+      background: #d1fae5;
+      border: 2px dashed #10b981;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      margin-top: 40px;
     }
 
     footer {
-      background: var(--cor2);
+      background: var(--azul);
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       header h1 {
-        font-size: 26px;
+        font-size: 28px;
       }
 
       .btn-comprar {
         font-size: 16px;
+        padding: 12px 24px;
+      }
+
+      .comparativo th, .comparativo td {
+        font-size: 14px;
       }
     }
   </style>
@@ -149,62 +197,107 @@
 
 <header>
   <h1>Pequenos com Propósito</h1>
-  <p>Um devocional completo, desenhos bíblicos e vídeos cristãos para fortalecer a fé dos seus filhos de forma divertida e espiritual.</p>
-  <a href="#preco" class="btn-comprar">Quero Ajudar Meu Filho a Crescer com Propósito</a>
+  <p>O devocional cristão mais completo para fortalecer a fé das crianças com amor, cor e propósito. Inclui vídeos, desenhos e lições diárias!</p>
+  <a class="btn-comprar" href="#preco">Quero Ensinar Meu Filho no Caminho de Deus</a>
 </header>
 
 <section>
-  <h2 style="text-align: center;">✨ O que seu filho vai receber</h2>
+  <img src="https://images.unsplash.com/photo-1618080872548-e68e6b81257d" alt="Criança feliz com a Bíblia" class="imagem-banner">
+
+  <h2>O que seu filho vai aprender</h2>
   <div class="cards">
     <div class="card">
       <img src="https://cdn-icons-png.flaticon.com/512/3541/3541406.png" alt="Bíblia infantil">
       <h3>Devocional Infantil</h3>
-      <p>Textos diários e atividades simples para crianças aprenderem sobre Jesus.</p>
+      <p>Lições diárias com linguagem infantil e princípios eternos.</p>
     </div>
     <div class="card">
       <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Desenhos bíblicos">
-      <h3>Desenhos para Colorir</h3>
-      <p>Imagens das histórias bíblicas para colorir, refletir e se divertir.</p>
+      <h3>Desenhos Bíblicos</h3>
+      <p>Atividades para colorir com histórias da Bíblia.</p>
     </div>
     <div class="card">
       <img src="https://cdn-icons-png.flaticon.com/512/727/727399.png" alt="Filmes cristãos">
-      <h3>Filmes e Vídeos Cristãos</h3>
-      <p>Conteúdo audiovisual que ensina valores cristãos de forma lúdica.</p>
+      <h3>Vídeos e Filmes</h3>
+      <p>Conteúdos audiovisuais que tocam e ensinam com alegria.</p>
     </div>
     <div class="card">
       <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Família unida">
-      <h3>Momento em Família</h3>
-      <p>Construa momentos únicos com seus filhos enquanto fortalecem sua fé.</p>
+      <h3>Tempo em Família</h3>
+      <p>Momentos devocionais para fortalecer o lar com amor.</p>
     </div>
   </div>
 </section>
 
-<section id="preco" class="valor">
-  <h2>Valor Especial: Apenas R$27,00</h2>
-  <p>Você recebe todo o conteúdo imediatamente após o pagamento, por e-mail ou WhatsApp!</p>
-  <a class="btn-comprar" href="https://go.paradisepagbr.com/hp6rdsvtdx">Comprar Agora</a>
-  <p style="margin-top: 10px; font-size: 14px;">Entrega instantânea • Conteúdo digital • Pagamento 100% seguro</p>
-</section>
-
 <section>
-  <h2 style="text-align: center;">❓ Perguntas Frequentes</h2>
-  <div class="faq">
-    <h3>📥 Quando recebo o produto?</h3>
-    <p>Imediatamente após o pagamento você receberá todo o material por e-mail ou WhatsApp.</p>
-
-    <h3>👶 Para qual idade é recomendado?</h3>
-    <p>De 3 a 11 anos. Mas pode ser adaptado para qualquer idade com apoio dos pais.</p>
-
-    <h3>📲 Posso acessar pelo celular?</h3>
-    <p>Sim! Todo conteúdo é digital e pode ser acessado por qualquer dispositivo.</p>
-
-    <h3>🔐 O pagamento é seguro?</h3>
-    <p>100%. Usamos tecnologia de criptografia e plataformas reconhecidas.</p>
+  <h2>O que os pais estão dizendo</h2>
+  <div class="testemunhos">
+    <div class="depoimento">"Meu filho ama as atividades, e agora pede para orarmos juntos todos os dias!" — <strong>Renata, mãe do João (6 anos)</strong></div>
+    <div class="depoimento">"Nunca vi minha filha tão empolgada para falar sobre Jesus. Gratidão!" — <strong>Fernando, pai da Luísa</strong></div>
   </div>
 </section>
 
+<section class="comparativo">
+  <h2 style="text-align: center;">Comparativo</h2>
+  <table>
+    <tr>
+      <th>Recursos</th>
+      <th>Pequenos com Propósito</th>
+      <th>Outros produtos</th>
+    </tr>
+    <tr>
+      <td>Devocional Diário</td>
+      <td>✅ Completo</td>
+      <td>❌ Limitado</td>
+    </tr>
+    <tr>
+      <td>Vídeos Cristãos</td>
+      <td>✅ Incluso</td>
+      <td>❌ Não tem</td>
+    </tr>
+    <tr>
+      <td>Desenhos Bíblicos</td>
+      <td>✅ Ilustrado</td>
+      <td>❌ Padrão</td>
+    </tr>
+    <tr>
+      <td>Preço</td>
+      <td><strong>R$27,00</strong></td>
+      <td>R$50 a R$120</td>
+    </tr>
+  </table>
+</section>
+
+<section class="bonus">
+  <h2>BÔNUS Exclusivo 🎁</h2>
+  <p>Comprando hoje, você ainda recebe um **Planner Devocional** para pais guiarem os momentos com seus filhos.</p>
+</section>
+
+<section id="preco" class="garantia">
+  <h2>Apenas R$27,00</h2>
+  <p>Receba tudo imediatamente após a confirmação do pagamento!</p>
+  <a class="btn-comprar" href="https://go.paradisepagbr.com/hp6rdsvtdx">Quero Comprar Agora</a>
+  <p style="margin-top: 10px; font-size: 14px;">Entrega instantânea • Conteúdo digital • Acesso vitalício</p>
+</section>
+
+<section class="faq">
+  <h2 style="text-align: center;">Perguntas Frequentes</h2>
+
+  <h3>📥 Quando recebo o material?</h3>
+  <p>Assim que o pagamento for confirmado, você receberá automaticamente o material no seu e-mail ou WhatsApp.</p>
+
+  <h3>👶 É indicado para qual faixa etária?</h3>
+  <p>Crianças entre 3 e 10 anos. Mas pode ser adaptado para qualquer idade com apoio dos pais.</p>
+
+  <h3>📱 Posso usar pelo celular?</h3>
+  <p>Sim! Você pode acessar tudo por celular, tablet ou computador sem precisar instalar nada.</p>
+
+  <h3>🔐 É seguro comprar?</h3>
+  <p>Sim, usamos plataformas 100% seguras com criptografia e garantia.</p>
+</section>
+
 <footer>
-  <p>&copy; 2025 Pequenos com Propósito. Todos os direitos reservados.</p>
+  <p>&copy; 2025 Pequenos com Propósito — Todos os direitos reservados.</p>
 </footer>
 
 </body>
